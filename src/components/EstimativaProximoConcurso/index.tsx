@@ -9,7 +9,7 @@ type Props = HTMLAttributes<HTMLElement> & {
 export function EstimativaProximoConcurso({valorEstimadoProximoConcurso, dataProximoConcurso}:Props) {
   return (
     <EstimativaProximoConcursoStyle>
-      Estimativa de prêmio do próximo concurso <p> {valorEstimadoProximoConcurso} </p> {dataProximoConcurso}
+      Estimativa de prêmio do próximo concurso <h2>R$ {valorEstimadoProximoConcurso} </h2> {dataProximoConcurso}
     </EstimativaProximoConcursoStyle>
   )
 }

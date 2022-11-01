@@ -6,10 +6,10 @@ type Props = HTMLAttributes<HTMLElement> & {
   dataApuracao: string;
 }
 
-export function DadosConcurso({numero, dataApuracao}:Props) {
+export function DadosConcurso({ numero, dataApuracao}:Props) {
   return (
     <DadosConcursoStyle>
-      <p>Resultado</p> Concurso {numero} ({dataApuracao})
+      Concurso {numero} ({dataApuracao})
     </DadosConcursoStyle>
   );
 }

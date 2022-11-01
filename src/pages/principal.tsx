@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Title } from '../components/Title';
+import { Acumulado } from "../components/Acumulado";
 import { DadosConcurso } from "../components/DadosConcurso";
 import { Local } from '../components/Local';
 import { NumerosSorteados } from "../components/NumerosSorteados";
@@ -26,6 +27,7 @@ export default function Principal() {
   return (
     <>
       <Title/>
+      {concurso.acumulado && <Acumulado /> }
       <DadosConcurso numero={concurso.numero} dataApuracao={concurso.dataApuracao} />
       <Local localSorteio={concurso.localSorteio} nomeMunicipioUFSorteios={concurso.nomeMunicipioUFSorteio} />
       <NumerosSorteados listaDezenas={concurso.listaDezenas} />
